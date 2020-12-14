@@ -1,0 +1,203 @@
+/* All */
+:root {
+	--color-main: rgb(221, 82, 63);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+
+
+/* Header */
+nav{
+    background-color: rgb(221, 168, 161);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.2);	
+    padding: 15px 4%;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 1;
+}
+nav ul{
+    display: flex; 
+	list-style: none;
+	justify-content: center;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none; 
+    padding: 10px 15px;
+}
+nav ul li a:hover{
+    color: var(--color-main);
+    border-bottom: 3px solid var(--color-main);
+}
+
+
+/* Home */
+#home{
+	padding: 50px 20px 0px;
+}
+#home img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+}
+#home h1{
+    font-size: 50px;
+    font-weight: 400;
+    padding: 5px;
+}
+#home_buttons{
+    margin-top: 30px;
+}
+#home_buttons .bx-envelope{
+	font-size: 30px;
+	vertical-align: middle;
+}
+#home_buttons b{
+	vertical-align: middle;
+	padding-left: 7px;
+}
+#ig_button{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+#ig_button i{
+    font-size: 40px;
+    color: black;
+    vertical-align: middle;
+}
+#ig_button:hover i, #ig_button:hover b{
+    color: grey;
+}
+
+
+/* Button */
+button{
+	background-color: var(--color-main);
+	font-size: 15px; 
+	outline: none;  
+	border: none;
+    border-radius: 30px;
+    padding: 5px 30px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+	cursor: pointer;
+    background-color: grey;
+}
+
+
+/* About & pillar*/
+#about, #pillar{
+    padding-top: 100px;
+}
+#about h3, #pillar h3, #work h3{
+    font-size: 40px;
+    color: var(--color-main);
+    border-bottom: 3px solid var(--color-main);
+    margin: 10px auto;
+    width: 220px;
+}
+#about-p{
+    padding: 10px 25%;
+}
+#about-box{
+	padding: 70px 15% 0;
+	text-align: left;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+}
+#about-box p{
+	margin: 5px 15px;
+}
+/* Pillars list*/
+#pillar strong{
+	font-size: 22px;
+	color: var(--color-main);
+}
+.info-list{
+	padding: 0 15% 0;
+	text-align: left;
+    list-style: none;
+    margin-top: 10px;
+}
+.info-list li{
+    padding: 18px 0;
+}
+
+
+/* work & team*/
+#work, #team{
+    padding-top: 100px;
+}
+#team h3{
+    font-size: 40px;
+    color: var(--color-main);
+    border-bottom: 3px solid var(--color-main);
+    margin: 10px auto;
+    width: 320px;
+}
+#work-box, #team-box{
+	padding: 20px 15%;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px 30px;
+}
+#box p{
+	padding-top: 5px;
+}
+
+
+/* footer section*/
+footer{
+    background: black;
+    text-align: center;
+	padding: 15px;
+	margin-top: 100px;
+}
+footer a, footer p{
+    color: white;
+    text-decoration: none;
+}
+.footer-links{
+    padding: 10px;
+}
+.footer-links a{
+    padding: 15px;
+    font-size: 30px;
+}
+footer a:hover{
+    color: var(--color-main);
+}
+
+@media only screen and (max-width : 1400px){
+	#work-box, #team-box{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width : 900px){
+	#about-box, #work-box, #team-box{
+		grid-template-columns: 1fr;
+	}
+	#about-p{
+		padding: 10px 18%;
+	}
+}
