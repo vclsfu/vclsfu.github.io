@@ -105,7 +105,7 @@ button:hover{
 
 /* About & pillar*/
 #about, #pillar{
-    padding-top: 100px;
+    padding: 50px 0;
 }
 #about h3, #pillar h3, #work h3{
     font-size: 40px;
@@ -145,7 +145,7 @@ button:hover{
 
 /* work & team*/
 #work, #team{
-    padding-top: 100px;
+    padding: 50px 0;
 }
 #team h3{
     font-size: 40px;
@@ -170,7 +170,7 @@ footer{
     background: black;
     text-align: center;
 	padding: 15px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 footer a, footer p{
     color: white;
@@ -218,5 +218,13 @@ footer a:hover{
 	}
 	#about-p{
 		padding: 10px 18%;
+	}
+}
+
+@media only screen and (max-width : 400px){
+	nav ul li a{
+		color: black;
+		text-decoration: none; 
+		padding: 10px 7px;
 	}
 }
