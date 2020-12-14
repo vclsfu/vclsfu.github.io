@@ -187,6 +187,25 @@ footer a:hover{
     color: var(--color-main);
 }
 
+/* Scrollbar Effects */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+} 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+
 @media only screen and (max-width : 1400px){
 	#work-box, #team-box{
 		grid-template-columns: 1fr 1fr;
