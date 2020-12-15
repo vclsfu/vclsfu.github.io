@@ -168,8 +168,10 @@ button:hover{
 	height: 220px;
 	margin: 0 auto;
 }
-#container img{
+#container img, #team img{
 	object-fit: cover;
+	width: 220px;
+	height: 220px;
 }
 #overlay {
 	position: absolute;
@@ -212,7 +214,7 @@ footer a, footer p{
 	padding: 15px;
 }
 footer a:hover{
-    color: var(--color-sec);
+    color: var(--color-main);
 }
 #designed-by::after{
 	content: "© 2020 VCL All Rights Reserved";
