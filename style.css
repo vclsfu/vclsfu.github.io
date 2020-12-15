@@ -46,7 +46,8 @@ header ul li a:hover{
 
 /* Home */
 #home img{
-    border-radius: 50%;
+	border-radius: 50%;
+	border: 5px solid var(--color-sec);
     height: 300px;
     width: 300px;
     margin-top: 80px;
