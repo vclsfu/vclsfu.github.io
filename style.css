@@ -184,7 +184,7 @@ footer a:hover{
     color: var(--color-main);
 }
 #designed-by::after{
-	content: "© 2020 VCL SFU All Rights Reserved";
+	content: "© 2020 VCL All Rights Reserved";
 }
 #designed-by:hover::after{
 	content: "Designed by Jeff Wang";
