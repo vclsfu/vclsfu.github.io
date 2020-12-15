@@ -183,6 +183,12 @@ footer a, footer p{
 footer a:hover{
     color: var(--color-main);
 }
+#designed-by::after{
+	content: "© 2020 VCL SFU All Rights Reserved";
+}
+#designed-by:hover::after{
+	content: "Designed by Jeff Wang";
+}
 
 /* Thin Scrollbar Effects */
 /* width */
@@ -220,12 +226,22 @@ footer a:hover{
 	#work-box, #team-box{
 		grid-template-columns: 1fr;
 	}
+	#about-p{
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width : 400px){
 	header ul li a{
-		color: black;
-		text-decoration: none; 
-		padding: 12px 9px;
+		padding: 12px 10px;
+	}
+	#about-p{
+		padding: 15px 30px;
+	}
+	#about-box{
+		padding: 70px 15px;
+	}
+	#pillar li{
+		padding: 18px 30px;
 	}
 }
