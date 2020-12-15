@@ -37,7 +37,7 @@ const sr = ScrollReveal({
 /*SCROLL Home*/
 sr.reveal('#home img',{});
 sr.reveal('#home h1',{}); 
-sr.reveal('#home p',{delay: 200}); 
+sr.reveal('#home',{delay: 200}); 
 sr.reveal('#home_buttons',{delay: 400}); 
 
 
