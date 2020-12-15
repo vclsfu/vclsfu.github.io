@@ -161,6 +161,37 @@ button:hover{
 	padding-top: 5px;
 }
 
+/* Project image overlays */
+#container {
+	position: relative;
+	width: 220px;
+	height: 220px;
+	margin: 0 auto;
+}
+#container img{
+	object-fit: cover;
+}
+#overlay {
+	position: absolute;
+	top: 0;
+	/* width: 100%; */
+	height: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: var(--color-sec);
+	overflow: hidden;
+}
+#container:hover #overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+#overlay p {
+	color: white;
+	text-align: left;
+	padding: 15px;
+}
+
+
 
 /* footer section*/
 footer{
@@ -181,7 +212,7 @@ footer a, footer p{
 	padding: 15px;
 }
 footer a:hover{
-    color: var(--color-main);
+    color: var(--color-sec);
 }
 #designed-by::after{
 	content: "© 2020 VCL All Rights Reserved";
@@ -191,24 +222,21 @@ footer a:hover{
 }
 
 /* Thin Scrollbar Effects */
-/* width */
 ::-webkit-scrollbar {
     width: 8px;
 }
-/* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: darkgrey;
 } 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: grey;
 }
 
 
+/* Viewport Sizing for TV, PC, Tablet and Mobile Devices */
 @media only screen and (max-width : 1250px){
 	#work-box, #team-box{
 		grid-template-columns: 1fr 1fr;
