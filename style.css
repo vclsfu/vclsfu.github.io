@@ -6,13 +6,14 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Source Serif Pro', serif;
 }
 html {
     scroll-behavior: smooth;
 }
 body{
-	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
 
@@ -103,10 +104,10 @@ button:hover{
 
 
 /* About & pillar*/
-#about, #pillar{
+#about, #pillar, #team{
     padding: 50px 0;
 }
-#about h3, #pillar h3, #work h3{
+#about h3, #pillar h3, #project h3, #story h3{
     color: var(--color-main);
 	border-bottom: 3px solid var(--color-main);
 	font-size: 40px;
@@ -141,10 +142,34 @@ button:hover{
 }
 
 
-/* work & team*/
-#work, #team{
-    padding: 50px 0;
+/* Project and Story section */
+#project, #story{
+	padding: 50px 15%;
 }
+#project-box, #story-box{
+	padding: 50px 0;
+	text-align: left;
+	display: flex;
+}
+#project img{
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.3);	
+	width: 250px;
+	height: 250px;
+}
+#story img{
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+#project-left, #story-left{
+	text-align: center;
+}
+#project-right p, #story-right p{
+	padding: 60px 80px;
+}
+
+
+/* Team Section*/
 #team h3{
     color: var(--color-main);
 	border-bottom: 3px solid var(--color-main);
@@ -152,48 +177,46 @@ button:hover{
 	width: 320px;
     margin: 10px auto;
 }
-#work-box, #team-box{
+#team-box{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 50px 30px;
 	padding: 20px 11%;
 }
-#box p{
-	padding-top: 5px;
+#project h1, #box h1{
+	padding-top: 10px;
 }
-
-/* Project image overlays */
-#container {
+/* Team image overlays */
+#container{
 	position: relative;
 	width: 220px;
-	height: 220px;
+	height: 280px;
 	margin: 0 auto;
 }
-#container img, #team img{
-	object-fit: cover;
-	width: 220px;
-	height: 220px;
-}
-#overlay {
+#overlay{
 	position: absolute;
 	top: 0;
-	/* width: 100%; */
 	height: 100%;
 	opacity: 0;
 	transition: 0.5s ease;
 	background-color: var(--color-sec);
 	overflow: hidden;
 }
-#container:hover #overlay {
+#container:hover #overlay{
 	opacity: 1;
 	cursor: pointer;
 }
-#overlay p {
+#overlay p{
 	color: white;
 	text-align: left;
-	padding: 15px;
+	padding: 45px 15px;
+	justify-content: center;
 }
-
+#team img{
+	object-fit: cover;
+	width: 220px;
+	height: 280px;
+}
 
 
 /* footer section*/
@@ -241,7 +264,7 @@ footer a:hover{
 
 /* Viewport Sizing for TV, PC, Tablet and Mobile Devices */
 @media only screen and (max-width : 1250px){
-	#work-box, #team-box{
+	#team-box{
 		grid-template-columns: 1fr 1fr;
 		padding: 20px 10%;
 	}
@@ -251,10 +274,16 @@ footer a:hover{
 	#about-box{
 		grid-template-columns: 1fr;
 	}
+	#project-box, #story-box{
+		display: block;
+	}
+	#project-right p, #story-right p{
+		padding: 30px 0;
+	}
 }
 
 @media only screen and (max-width : 600px){
-	#work-box, #team-box{
+	#team-box{
 		grid-template-columns: 1fr;
 	}
 	#about-p{
