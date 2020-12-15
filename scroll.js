@@ -34,32 +34,39 @@ const sr = ScrollReveal({
     reset: true
 });
 
-/*SCROLL HOME*/
+/*SCROLL Home*/
 sr.reveal('#home img',{});
 sr.reveal('#home h1',{}); 
 sr.reveal('#home p',{delay: 200}); 
 sr.reveal('#home_buttons',{delay: 400}); 
 
 
-/*SCROLL ABOUT*/
+/*SCROLL About*/
 sr.reveal('#about h3',{}); 
 sr.reveal('#about-p',{delay: 200}); 
-sr.reveal('#about-box',{delay: 400}); 
+
+/*SCROLL About/ Team box*/
+sr.reveal('#box',{delay: 200}); 
 
 
 /*SCROLL Piller*/
-sr.reveal('#pillar',{}); 
-sr.reveal('#pillar ul',{delay: 200}); 
+sr.reveal('#pillar h3',{}); 
+sr.reveal('#pillar li',{delay: 200}); 
 
-/*SCROLL Work/Project*/
-sr.reveal('#work h3',{}); 
-sr.reveal('#work-box',{delay: 200}); 
+/*SCROLL Project*/
+sr.reveal('#project h3',{}); 
+sr.reveal('#project-left',{delay: 200}); 
+sr.reveal('#project-right',{delay: 200}); 
 
-/*SCROLL team*/
+/*SCROLL Team*/
 sr.reveal('#team h3',{}); 
-sr.reveal('#team-box',{delay: 200}); 
 
-/*SCROLL team*/
+/*SCROLL Story*/
+sr.reveal('#story h3',{}); 
+sr.reveal('#story-left',{delay: 200}); 
+sr.reveal('#story-right',{delay: 200}); 
+
+/*SCROLL Footer*/
 sr.reveal('footer',{}); 
 
 
