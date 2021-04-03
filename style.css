@@ -171,7 +171,7 @@ button:hover{
 }
 
 
-/* Team Section*/
+/* Team Section */
 #team h3{
     color: var(--color-main);
 	border-bottom: 3px solid var(--color-main);
@@ -221,6 +221,24 @@ button:hover{
 }
 
 
+/* Community Safety */
+#safety h3{
+    color: var(--color-main);
+	border-bottom: 3px solid var(--color-main);
+	font-size: 40px;
+	width: 360px;
+    margin: 10px auto;
+}
+#safety p{
+	padding: 15px 18%;
+}
+#safety a{
+	color: var(--color-main);
+}
+#safety a:hover{
+	color: var(--color-sec);
+}
+
 /* footer section*/
 footer{
     background: black;
@@ -265,7 +283,7 @@ footer a:hover{
 
 
 /* Viewport Sizing for TV, PC, Tablet and Mobile Devices */
-@media only screen and (max-width : 1250px){
+@media only screen and (max-width : 1260px){
 	#team-box{
 		grid-template-columns: 1fr 1fr;
 		padding: 20px 10%;
