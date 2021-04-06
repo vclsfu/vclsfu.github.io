@@ -55,8 +55,8 @@ sr.reveal('#pillar li',{delay: 200});
 
 /*SCROLL Project*/
 sr.reveal('#project h3',{}); 
-sr.reveal('#project-left',{delay: 200}); 
-sr.reveal('#project-right',{delay: 200}); 
+// sr.reveal('#project-left',{delay: 200}); 
+// sr.reveal('#project-right',{delay: 200}); 
 
 /*SCROLL Team*/
 sr.reveal('#team h3',{}); 
