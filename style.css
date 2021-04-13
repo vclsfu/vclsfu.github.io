@@ -181,7 +181,9 @@ button:hover{
 	width: 50vw;
 	margin: auto;
 }
-
+#paypalform{
+	text-align: center;
+}
 
 /* Team Section */
 #team h3{
