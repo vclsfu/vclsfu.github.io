@@ -153,28 +153,27 @@ button:hover{
 	text-align: left;
 	display: flex;
 }
-#project img{
+#project img, #story img{
 	box-shadow: 3px 3px 10px rgba(0,0,0,0.3);	
 	width: 250px;
 	height: 250px;
 }
 #story img{
 	border-radius: 50%;
-	width: 250px;
-	height: 250px;
 }
 #project-left, #story-left{
 	text-align: center;
 }
-#project-right, #story-right{
-	padding: 60px 80px;
+#project-right{
+	padding: 5% 80px;
 }
-#project-right p{
-	font-weight: 600;
-	font-size: 25px;
-	text-align: center;
-	padding-bottom: 25px;
+#story-right{
+	padding: 0 80px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
 }
+
 
 /* Pay Pal Button*/
 #smart-button-container{
@@ -278,7 +277,7 @@ footer a:hover{
 	content: "© 2021 VCL All Rights Reserved";
 }
 #designed-by:hover::after{
-	content: "Designed by Jeff Wang";
+	content: "Designed with 🧡 by Jeff Wang";
 }
 
 /* Thin Scrollbar Effects */
