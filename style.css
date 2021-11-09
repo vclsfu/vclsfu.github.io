@@ -4,14 +4,14 @@
 	--color-sec: rgb(221, 168, 161);
 }
 *{
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 	/* font-family: 'Open Sans', sans-serif; */
 	font-family: 'Source Serif Pro', serif;
 }
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 body{
 	text-align: center;
@@ -25,23 +25,23 @@ header{
 	z-index: 1000;
 	top: 0;
 	width:100%;
-    background-color: var(--color-sec);
-    box-shadow: 3px 3px 7px rgba(0,0,0,0.2);	
-    padding: 15px 4%; 
+	background-color: var(--color-sec);
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.2);	
+	padding: 15px 4%; 
 }
 header ul{
-    display: flex; 
+	display: flex; 
 	list-style: none;
 	justify-content: center;
 }
 header ul li a{
-    color: black;
-    text-decoration: none; 
-    padding: 12px 15px;
+	color: black;
+	text-decoration: none; 
+	padding: 12px 15px;
 }
 header ul li a:hover{
-    color: var(--color-main);
-    border-bottom: 3px solid var(--color-main);
+	color: var(--color-main);
+	border-bottom: 3px solid var(--color-main);
 }
 
 
@@ -49,17 +49,17 @@ header ul li a:hover{
 #home img{
 	border-radius: 50%;
 	border: 5px solid var(--color-sec);
-    height: 300px;
-    width: 300px;
-    margin-top: 80px;
+	height: 300px;
+	width: 300px;
+	margin-top: 80px;
 }
 #home h1{
-    font-size: 50px;
-    font-weight: 400;
-    padding: 5px;
+	font-size: 50px;
+	font-weight: 400;
+	padding: 5px;
 }
 #home_buttons{
-    margin-top: 30px;
+	margin-top: 30px;
 }
 #home_buttons .bx-link{
 	vertical-align: middle;
@@ -71,17 +71,17 @@ header ul li a:hover{
 	padding-left: 7px;
 }
 #ig_button{
-    text-decoration: none;
-    color: black;
-    padding-left: 20px;
+	text-decoration: none;
+	color: black;
+	padding-left: 20px;
 }
 #ig_button i{
 	vertical-align: middle;
 	color: black;
-    font-size: 40px;
+	font-size: 40px;
 }
 #ig_button:hover i, #ig_button:hover b{
-    color: var(--color-sec);
+	color: var(--color-sec);
 }
 
 
@@ -92,32 +92,32 @@ button{
 	font-size: 15px; 
 	outline: none;  
 	border: none;
-    border-radius: 30px;
-    padding: 5px 30px;
+	border-radius: 30px;
+	padding: 5px 30px;
 }
 button a{
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 button:hover{
 	cursor: pointer;
-    background-color: var(--color-sec);
+  background-color: var(--color-sec);
 }
 
 
 /* About & pillar*/
 #about, #pillar, #team{
-    padding: 50px 0;
+  padding: 50px 0;
 }
 #about h3, #pillar h3, #project h3, #story h3{
-    color: var(--color-main);
+  color: var(--color-main);
 	border-bottom: 3px solid var(--color-main);
 	font-size: 40px;
 	width: 220px;
 	margin: 10px auto;
 }
 #about-p{
-    padding: 15px 18%;
+	padding: 15px 18%;
 }
 #about-box{
 	text-align: left;
@@ -136,11 +136,11 @@ button:hover{
 }
 #pillar ul{
 	text-align: left;
-    list-style: none;
-    margin-top: 10px;
+	list-style: none;
+	margin-top: 10px;
 }
 #pillar li{
-    padding: 18px 15% 0;
+	padding: 18px 15% 0;
 }
 
 
@@ -186,11 +186,11 @@ button:hover{
 
 /* Team Section */
 #team h3{
-    color: var(--color-main);
+	color: var(--color-main);
 	border-bottom: 3px solid var(--color-main);
 	font-size: 40px;
 	width: 320px;
-    margin: 10px auto;
+	margin: 10px auto;
 }
 #team-box{
 	display: grid;
@@ -216,6 +216,7 @@ button:hover{
 	transition: 0.5s ease;
 	background-color: var(--color-sec);
 	overflow: hidden;
+	overflow-y: auto;
 }
 #container:hover #overlay{
 	opacity: 1;
@@ -236,11 +237,11 @@ button:hover{
 
 /* Community Safety  */
 #safety h3{
-    color: var(--color-main);
+	color: var(--color-main);
 	border-bottom: 3px solid var(--color-main);
 	font-size: 40px;
 	width: 360px;
-    margin: 10px auto;
+	margin: 10px auto;
 }
 #safety p{
 	padding: 15px 18%;
@@ -254,24 +255,24 @@ button:hover{
 
 /* footer section*/
 footer{
-    background: black;
-    text-align: center;
+	background: black;
+	text-align: center;
 	margin-top: 50px;
 	padding: 15px;
 }
 footer a, footer p{
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 .footer-links{
-    padding: 10px;
+	padding: 10px;
 }
 .footer-links a{
 	font-size: 30px;
 	padding: 15px;
 }
 footer a:hover{
-    color: var(--color-main);
+	color: var(--color-main);
 }
 #designed-by::after{
 	content: "© 2021 VCL All Rights Reserved";
@@ -282,16 +283,16 @@ footer a:hover{
 
 /* Thin Scrollbar Effects */
 ::-webkit-scrollbar {
-    width: 8px;
+	width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+	background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: darkgrey;
+	background: darkgrey;
 } 
 ::-webkit-scrollbar-thumb:hover {
-    background: grey;
+	background: grey;
 }
 
 
