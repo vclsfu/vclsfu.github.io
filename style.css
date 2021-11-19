@@ -326,7 +326,7 @@ footer a:hover{
 	#team-box{
 		grid-template-columns: 1fr;
 	}
-	#about-p{
+	#about-p, #safety p{
 		text-align: left;
 	}
 }
@@ -335,7 +335,7 @@ footer a:hover{
 	header ul li a{
 		padding: 12px 10px;
 	}
-	#about-p{
+	#about-p, #safety p{
 		padding: 15px 35px;
 	}
 	#about-box{
