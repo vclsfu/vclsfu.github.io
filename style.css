@@ -163,9 +163,13 @@ button:hover{
 }
 #project-left, #story-left{
 	text-align: center;
+	width: 250px;
+	/* background-color: pink; */
 }
 #project-right{
 	padding: 5% 80px;
+	width: 100%;
+	/* background-color: lightgreen; */
 }
 #story-right{
 	padding: 0 80px;
@@ -176,12 +180,44 @@ button:hover{
 
 
 /* Pay Pal Button*/
-#smart-button-container{
+/* #smart-button-container{
 	width: 50vw;
 	margin: auto;
-}
+} */
 #paypalform{
 	text-align: center;
+}
+#paypalbutton{
+	width: 100%;
+	max-width: 700px;
+	padding: 10px 0;
+	background-color: #ffc43a;
+	color: #002d85;
+	font-size: 20px; 
+	font-weight: bold; 
+	border: none;
+	border-radius: 30px;
+}
+#paypalbutton:hover{
+	cursor: pointer;
+	color: white;
+  background-color: var(--color-sec);
+}
+#paypal-subimages{
+	padding-top: 8px;
+	text-align: center;
+	font-size: 45px; 
+}
+#paypal-subtext{
+	text-align: center;
+	font-size: 13px; 
+	font-style: italic;
+}
+.bxl-paypal{
+	color: #002d85;
+	font-size: 20px; 
+	position: relative;
+	top: 5px;
 }
 
 /* Team Section */
@@ -304,6 +340,9 @@ footer a:hover{
 	}
 	#project-box{
 		display: block;
+	}
+	#project-left, #story-left{
+		width: auto;
 	}
 	#project-right{
 		padding: 30px 0 0;
