@@ -314,7 +314,7 @@ footer a:hover{
 	content: "© 2021 VCL All Rights Reserved";
 }
 #designed-by:hover::after{
-	content: "Designed with 🧡 by Jeff Wang";
+	content: "Built with 🧡 by Jeff Wang";
 }
 
 /* Thin Scrollbar Effects */
